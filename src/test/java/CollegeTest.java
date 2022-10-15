@@ -8,7 +8,7 @@ import java.util.List;
 public class CollegeTest {
     @Test
     public void testCourseProgrammeConstructor() {
-        System.out.println("Conorc32's Junit test");
+        System.out.println("Testing CourseProgrammeConstructor");
         final String courseName = "4BCT";
         List<String> modules = Collections.singletonList("CT417");
         List<Student> students = Collections.emptyList();

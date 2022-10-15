@@ -8,8 +8,6 @@ public class College {
     public CourseProgramme computerScience;
     public CourseProgramme arts;
 
-
-
     public void populateCollege() {
         String SoftEngIII = "CT417";
         String InformationRetrieval = "CT4100";
@@ -27,9 +25,7 @@ public class College {
 
         Student s1 = new Student("John", 23, "11/01/1999", 17345678, "4BCT", computerScienceModules);
         Student s2 = new Student("Ann", 21, "11/01/2001", 19345678, "4BA", artsModules);
-        //Student s3 = new Student("Bob", 21, "11/01/2001", 19345678, "4BA", artsModules);
 
-        //String courseName, List<String> modules, List<Student> students, DateTime startDate, DateTime endDate) {
         computerScience = new CourseProgramme(
                 "Computer Science", computerScienceModules, Collections.singletonList(s1),
                 new DateTime(), new DateTime());
@@ -38,11 +34,6 @@ public class College {
                 "Arts", artsModules, Collections.singletonList(s2),
                 new DateTime(), new DateTime());
 
-        // creating a handful of fictional students with mock data,
-        //adding the students to a number of modules and adding a number of modules to a course.
-        //Further on, the program should print out a list of all the courses, their respective modules,
-        //and all students, their usernames, assigned modules and the course(s) they are registered
-        //for to the console.
         System.out.println("Printing list of courses: " + computerScience.getCourseName() +" and " + arts.getCourseName());
         System.out.println("Their corresponding modules: " + computerScience.getModules() +"\n"+arts.getModules());
         System.out.println("Printing Student Information");
